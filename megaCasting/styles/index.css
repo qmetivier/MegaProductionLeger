@@ -1,0 +1,229 @@
+body{
+	margin: 0;
+	background-color: rgb(15,15,15);
+	font-family: Georgia, serif;
+}
+
+.container{
+	width: 100%;
+	margin: 0 auto;
+	background-color: white;
+}
+
+.clearboth{
+	clear: both;
+}
+
+.element-header{
+	display: inline-block;
+	color: grey;
+	background-color: rgb(15,15,15);
+	border: none;
+	padding: 15px 30px;
+	vertical-align: top;
+	font-size: 1.1em;
+}
+
+.error{
+	display: inline-block;
+}
+
+header img{
+	width: 14vw;
+	margin-right: 50px;
+	height: 13vh;
+}
+
+header button, header > div{
+	margin-top: 30px; 
+}
+
+header .authDiv{
+	float: right;
+	background-color: lightgray;
+	border-left: 3px;
+	border-bottom-left-radius: 5px;
+	border-top-left-radius: 5px;
+	cursor: pointer;
+}
+
+header > button[active], header > a:hover > button{
+	background-color: rgb(35,35,35);
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+header > div:hover{
+	background-color: rgb(35,35,35);
+}
+
+header > div:hover > button{
+	cursor: pointer;
+	color: gray;
+}
+
+.img-fond{
+	width: 100%;
+}
+
+.hr-black{	
+	height: 2vh;
+	margin: -4px;
+	width: 100%;
+	background-color: rgb(15,15,15);
+}
+
+.main{
+	vertical-align: top;
+	display: inline-block;
+	margin: 0;
+}
+
+/* Panel de connection */
+
+#btn-panel-login{
+	margin: 0;
+	background-color: transparent;
+	border: none;
+	font-size: 1.1em;
+}
+
+.back-panel{
+	z-index: 100;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 98vw;
+	height: 200vh;
+	background-color: rgba(0,0,0,0.0);
+}
+
+.back-panel[display="none"]{
+	display: none;
+}
+
+.div-auth {
+	float: right;
+}
+
+.panel{
+	z-index: 100;
+	position: absolute;
+	top: -100vh;
+	right: -20vw;
+	background-color: white;
+	border-radius: 5px;
+	width: 30vw;
+	height: 35vh;
+	margin: 0 auto;
+	margin-top: 20vh;
+	margin-right: 20vw;
+	overflow-x: hidden;
+	transition: 0.3s;
+	cursor: default;
+}
+
+.panel[show]{
+	transition: 0.5s;
+	top: -8vh;
+	height: 250px;
+	display: all;
+}
+
+
+.formulaire{
+	transition: 0.3s;
+	display: inline-block;
+	text-align: center;
+	width: 30vw;
+	margin-top: 20px;
+}
+
+.div-auth .div-input{
+	display: inline-block;
+	position: relative;
+	margin: 10px 0;
+}
+
+.div-input label{
+	display: block;
+}
+
+.div-auth .btn-login{
+	margin: 20px 0;
+	padding: 10px; 
+	width: 40%;
+	background-color: #CCFF99;
+	border: 1px solid #CCFF99;
+}
+
+.div-auth .error{
+	padding: 3px;
+	color: white;
+	left: 0;
+	border-radius: 5px;
+	background-color: rgba(220,20,20,0.7);
+}
+
+#containerMain{
+	text-align: center;
+}
+
+.errorPage{
+	background-color: rgb(15,15,15);
+	display: inline-block;
+	width: 50vw;
+	margin: 5vh 0;
+	padding: 2vh 3vw;
+	border-radius: 5px;
+	color: gray;
+	text-align: center;
+}
+
+.errorPage > div{
+	margin: 10px;
+}
+
+/*  Pied de page  */
+
+footer{
+	background-color: rgb(15,15,15);
+	color: lightgray;
+	text-align: center;
+	margin: 10px 0; 
+}
+
+
+@media (max-width: 1080px) {
+    
+	header{
+		text-align: center;
+	}
+
+    header > a > button{
+    	width: 98vw;
+    }
+    header img{
+    	width: 40vw;
+    	margin-right: 0;
+	height:unset;
+    }
+
+    header .authDiv{
+    	float: none;
+    	border-radius: 5px;
+    }
+
+	.panel[show]{
+		transition: 0.5s;
+		width: 300px;
+		position: relative;
+		height: 200px;
+		right: unset;
+		left: unset;
+		top: 10px;
+		margin: auto;
+		min-width: 150px;
+	}
+
+}

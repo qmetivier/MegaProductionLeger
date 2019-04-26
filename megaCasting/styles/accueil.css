@@ -1,0 +1,63 @@
+.main-left{
+	width: 25vw;
+	min-height: 75vh;
+	background-color: white;
+	border: 3px solid rgb(15,15,15);
+	color: gray;
+	margin-left: 2vw;
+	margin-right: 3vw;
+}
+
+
+.bar-search > div, .bar-search{
+	text-align: center;
+	margin-top: 20px;
+}
+
+#searchbar{
+	width: 70%;}
+
+.main-right{
+	width: 64vw;
+}
+
+/* Container Offre */
+
+.offre-div{
+	border: 2px solid lightgray;
+	background-color: rgb(15,15,15);
+	color: lightgray;
+	margin: 10px 0;
+	padding: 5px;
+}
+
+.offre-div > div{
+	margin: 8px 0;
+}
+
+.offre-titre{
+	font-size: 1.3em;
+}
+
+.offre-date{
+	float: right;
+	margin-right: 5px;
+}
+
+.offre-desc { 
+    max-height: 3.4em;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    transition: 1s;
+    background-color: white;
+    margin-right:10px;
+    padding: 5px;
+    border-radius: 5px;
+    color: gray;
+}
+
+.offre-link{
+	float: right;
+	margin-right: 5px;
+	color: white;
+}

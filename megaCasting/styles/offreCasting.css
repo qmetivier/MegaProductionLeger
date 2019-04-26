@@ -1,0 +1,46 @@
+.main{
+	background-color: rgb(15,15,15);
+	color: lightgray;
+	padding: 1vh 0.5vw;
+	padding-top: 2vh;
+	border: 2px solid darkgray;
+	border-top: none;  
+}
+
+.main > div{
+	padding-top: 1vh;
+}
+
+#ContainerOffre{
+	min-width: 68vw;
+	max-width: 70vw;
+	text-align: left;
+	margin-right: 2vw; 
+}
+
+#offre-titre{
+	font-size: 1.2em;
+	word-wrap: break-word;
+}
+
+#offre-date{
+	font-style: italic;
+	font-size: 0.9em;
+	margin-bottom: 5px;
+}
+
+#offre-desc{
+	padding: 5px;
+	background-color: white;
+	border-radius: 5px;
+	color: black;
+	word-wrap: break-word;
+}
+
+#offre-desc > div{
+	font-size: 1.1em;
+}
+
+#ContainerPro{
+	min-width: 15vw;
+}

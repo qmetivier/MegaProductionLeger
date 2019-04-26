@@ -1,0 +1,63 @@
+.div{
+	background-color: rgb(15,15,15);
+	display: inline-block;
+	width: 50vw;
+	margin: 5vh 0;
+	padding: 2vh 3vw;
+	border-radius: 5px;
+	color: gray;
+	text-align: left;
+}
+
+.profil-top{
+	margin: 50px 0;
+}
+
+#profil-img{
+	color: white;
+	font-size: 3em;
+	background-color: gray;
+	border: 20px solid gray;
+	border-radius: 50%;
+	vertical-align: sub;
+}
+
+#profil-nom{
+	font-size: 1.6em;
+}
+
+.div-offres{
+	margin-top: 0;
+	width: 75vw;
+}
+
+/* Container Offre */
+
+.offre-div{
+	background-color: white;
+	border: 1px solid white;
+	border-radius: 5px;
+	margin: 10px 0;
+}
+
+.offre-date{
+	float: right;
+	margin-right: 5px;
+}
+
+.offre-desc { 
+    max-height: 3.5em;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    word-wrap: break-word;
+    transition: 1s;
+}
+
+.offre-desc:hover {
+	transition: 1s;
+	max-height:100vh;
+}
+
+.div-empty-offres{
+	text-align: center;
+}

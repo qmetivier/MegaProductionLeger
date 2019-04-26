@@ -1,0 +1,30 @@
+#Containerinfo{
+	background-color: rgb(15,15,15);
+	display: inline-block;
+	width: 50vw;
+	margin: 5vh 0;
+	padding: 2vh 3vw;
+	border-radius: 5px;
+	color: gray;
+	text-align: left;
+}
+
+#info-titre{
+	font-size: 1.3em;
+}
+
+#info-type{
+	font-style: italic;
+	margin: 5px 0;
+}
+
+#info-desc{
+	padding: 5px;
+	background-color: white;
+	border-radius: 5px;
+	color: black;
+}
+
+#info-desc > div{
+	font-size: 1.1em;
+}
