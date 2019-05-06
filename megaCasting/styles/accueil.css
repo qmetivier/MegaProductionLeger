@@ -12,6 +12,10 @@
 	filter:progid:DXImageTransform.Microsoft.Shadow(color='#6565', Direction=135, Strength=5); 
 }
 
+.main-right{
+	width: 70%;
+}
+
 
 .bar-search > div, .bar-search{
 	text-align: center;
@@ -22,10 +26,6 @@
 	width: 70%;
 }
 
-.main-right{
-	width: 60vw;
-}
-
 /* Container Offre */
 
 .offre-div{
@@ -34,6 +34,7 @@
 	color: lightgray;
 	margin: 10px 0;
 	padding: 5px;
+	text-align: left;
 }
 
 .offre-div > div{
@@ -65,4 +66,16 @@
 	float: right;
 	margin-right: 5px;
 	color: white;
+}
+
+@media (max-width: 1000px){
+	.main-left{
+		width: 90%;
+		margin: 0 auto;
+		display: block;
+		min-height: 0;
+	}
+	.main-right{
+		width: 100%;
+	}
 }
