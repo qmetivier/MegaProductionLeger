@@ -1,4 +1,5 @@
-﻿<?php 
+﻿<?php
+
 session_start();
 include '../services/requeteSql.php';
 include '../services/function.php';
@@ -79,12 +80,16 @@ if (isset($_GET["search"])) {
 	$listOffres = requeteSql::getAlloffres();
 }
 
+if ($listOffres == null) {
+	
+	//Charge en js le template de l'erreur Empty
+	$PageEmpty = file_get_contents('../template/errorEmpty.html');
+	$scripts .= functions::SendVar('PageEmpty', $PageEmpty);
+
+}
+
 // transfert les offres du php au js
 $scripts .= functions::SendVar('Offres', $listOffres);
-
-//Charge en js le template de l'erreur 404
-$Page404 = file_get_contents('../template/error404.html');
-$scripts .= functions::SendVar('Page404', $Page404);
 
 // On place toutes les function js, appeler avant, sur la vue
 $page = str_replace("||SCRIPTS||", $scripts, $page);

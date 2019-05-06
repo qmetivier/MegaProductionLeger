@@ -10,7 +10,7 @@
 <body>
 	||HEADER||
 	<div class="container">
-		<img src="../others/megaCastingFond.svg" class="img-fond">
+		<img src="../others/megaCastingFond.jpg" class="img-fond">
 		<div class="hr-black"></div>
 		<div id="containerMain">
 			<div class="main" id="ContainerOffre">

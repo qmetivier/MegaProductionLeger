@@ -79,7 +79,7 @@ function CheckboxContainer(info){
 var container = document.getElementById("ContainerOffres");
 // Si il n'y a pas d'offre de casting
 if (Offres[0] == undefined) {
-	container.innerHTML = Page404;
+	container.innerHTML = PageEmpty;
 }else{
 	//Sinon on les affichent
 	showListOffres(container, Offres);

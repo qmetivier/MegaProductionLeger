@@ -33,4 +33,10 @@ function PacksContainer(pack){
 }
 
 var container = document.getElementById("ContainerPacks");
-showListInfos(container, Packs);
+
+if (Packs[0] == undefined) {
+	container.innerHTML = PageEmpty;
+}else{
+	//Sinon on les affichent
+	showListInfos(container, Packs);
+}

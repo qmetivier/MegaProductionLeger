@@ -1,74 +1,134 @@
 body{
 	margin: 0;
-	background-color: rgb(15,15,15);
+	margin-top: -20px;
+	background-color: rgb(220,220,220);
 	font-family: Georgia, serif;
+	z-index: 1;
+}
+
+body > div{
+	padding: 0;
 }
 
 .container{
-	width: 100%;
+	width: 95%;
 	margin: 0 auto;
 	background-color: white;
+	-moz-box-shadow: 10px 10px 5px #656565;
+	-webkit-box-shadow: 10px 10px 5px #656565;
+	-o-box-shadow: 10px 10px 5px #656565;
+	box-shadow: 10px 10px 5px #656565;
+	filter:progid:DXImageTransform.Microsoft.Shadow(color='#6565', Direction=135, Strength=5); 
 }
 
 .clearboth{
 	clear: both;
 }
 
-.element-header{
-	display: inline-block;
-	color: grey;
-	background-color: rgb(15,15,15);
-	border: none;
-	padding: 15px 30px;
-	vertical-align: top;
-	font-size: 1.1em;
-}
-
 .error{
 	display: inline-block;
 }
 
-header img{
-	width: 14vw;
-	margin-right: 50px;
-	height: 13vh;
+a{
+	text-decoration: none; 
 }
 
-header button, header > div{
-	margin-top: 30px; 
+
+/* header */
+
+header{
+	height: 100px;
+	border-bottom: 5px solid black;
+	z-index: 2;
 }
 
-header .authDiv{
+header > img{
+	height: 100%;
+	padding: 0  5px !important;
+}
+
+header > div{
+	display: inline-block;
+}
+
+.element-header{
+	border: none;
+	padding: 15px 30px;
+	vertical-align: middle;
+	font-size: 1.1em;
+}
+
+a.element-header{
+	color: black;
+	text-decoration: none;
+	font-size: 1.4em;
+}
+
+a.element-header, div.element-header{
+	border-bottom: 2px solid transparent;
+	border-top: 2px solid transparent;
+}
+
+a.element-header:hover, button{
+	border-bottom: 2px solid green;
+	border-top: 2px solid green;
+	cursor: pointer;
+}
+
+.authDiv{
 	float: right;
-	background-color: lightgray;
-	border-left: 3px;
-	border-bottom-left-radius: 5px;
-	border-top-left-radius: 5px;
-	cursor: pointer;
+	margin: 27px;
 }
 
-header > button[active], header > a:hover > button{
-	background-color: rgb(35,35,35);
-	cursor: pointer;
-	transition: 0.3s;
+@media (max-width: 1141px){
+	
+	header{
+		height: auto;
+	}
+
+	.element-header{
+		display: block;
+		margin: 20px 250px;
+		text-align: center;
+		float: none;
+	}
+
+	header > img{
+		height: 100px;
+		margin: 0 auto !important;
+	}
+
+	.authDiv{
+		margin: 27px 250px;
+	}
+
+	.panel[show]{
+	transition: 0.5s;
+	width: 300px;
+	position: relative;
+	height: 200px;
+	right: unset;
+	left: unset;
+	top: 30px;
+	margin: auto;
+	min-width: 150px;
+}
 }
 
-header > div:hover{
-	background-color: rgb(35,35,35);
-}
-
-header > div:hover > button{
-	cursor: pointer;
-	color: gray;
-}
+/* autres */
 
 .img-fond{
 	width: 100%;
+	height: 50%;
+	filter: grayscale(100%) blur(2px);
+    -webkit-filter: grayscale(100%) blur(2px);
+    -moz-filter: grayscale(100%) blur(2px);
+    -ms-filter: grayscale(100%) blur(2px);
+    -o-filter: grayscale(100%) blur(2px);
 }
 
 .hr-black{	
-	height: 2vh;
-	margin: -4px;
+	height: 1vh;
 	width: 100%;
 	background-color: rgb(15,15,15);
 }
@@ -77,6 +137,10 @@ header > div:hover > button{
 	vertical-align: top;
 	display: inline-block;
 	margin: 0;
+}
+
+.main-right{
+	text-align: center;
 }
 
 /* Panel de connection */
@@ -125,7 +189,7 @@ header > div:hover > button{
 
 .panel[show]{
 	transition: 0.5s;
-	top: -8vh;
+	top: 2vh;
 	height: 250px;
 	display: all;
 }
@@ -137,6 +201,7 @@ header > div:hover > button{
 	text-align: center;
 	width: 30vw;
 	margin-top: 20px;
+	margin-bottom: 0 !important;
 }
 
 .div-auth .div-input{
@@ -190,40 +255,9 @@ footer{
 	background-color: rgb(15,15,15);
 	color: lightgray;
 	text-align: center;
-	margin: 10px 0; 
+	margin: 10px 0 0 0; 
 }
 
+/*
 
-@media (max-width: 1080px) {
-    
-	header{
-		text-align: center;
-	}
-
-    header > a > button{
-    	width: 98vw;
-    }
-    header img{
-    	width: 40vw;
-    	margin-right: 0;
-	height:unset;
-    }
-
-    header .authDiv{
-    	float: none;
-    	border-radius: 5px;
-    }
-
-	.panel[show]{
-		transition: 0.5s;
-		width: 300px;
-		position: relative;
-		height: 200px;
-		right: unset;
-		left: unset;
-		top: 10px;
-		margin: auto;
-		min-width: 150px;
-	}
-
-}
+*/

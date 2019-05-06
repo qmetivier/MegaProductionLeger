@@ -32,6 +32,13 @@ $listPacks = requeteSql::getAllPacks();
 // transfert les packs du php au js
 $scripts .= functions::SendVar('Packs', $listPacks);
 
+if ($listPacks == null) {
+	
+	//Charge en js le template de l'erreur Empty
+	$PageEmpty = file_get_contents('../template/errorEmpty.html');
+	$scripts .= functions::SendVar('PageEmpty', $PageEmpty);
+
+}
 // On place toutes les function js, appeler avant, sur la vue
 $page = str_replace("||SCRIPTS||", $scripts, $page);
 

@@ -34,4 +34,11 @@ function InfosContainer(info){
 }
 
 var container = document.getElementById("ContainerInfos");
-showListInfos(container, Infos);
+
+if (Infos[0] == undefined) {
+	container.innerHTML = PageEmpty;
+}else{
+	//Sinon on les affichent
+	showListInfos(container, Infos);
+}
+
