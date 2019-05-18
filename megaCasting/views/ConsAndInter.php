@@ -5,7 +5,7 @@
 	<title>Acceuil</title>
 	<link rel="stylesheet" type="text/css" href="../fontawesome/css/all.min.css">
 	<link rel="stylesheet" type="text/css" href="../styles/index.css">
-	<link rel="stylesheet" type="text/css" href="../styles/consAndInter.css">
+	<link rel="stylesheet" type="text/css" href="../styles/ConsAndInter.css">
 </head>
 <body>
 	||HEADER||
