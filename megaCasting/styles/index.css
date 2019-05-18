@@ -88,7 +88,7 @@ a.element-header:hover, button{
 
 	.element-header{
 		display: block;
-		margin: 20px 250px;
+		margin: 20px 30%;
 		text-align: center;
 		float: none;
 	}
@@ -99,12 +99,11 @@ a.element-header:hover, button{
 	}
 
 	.authDiv{
-		margin: 27px 250px;
+		margin: 27px 30%;
 	}
 
 	.panel[show]{
 	transition: 0.5s;
-	width: 300px;
 	position: relative;
 	height: 200px;
 	right: unset;
@@ -137,6 +136,7 @@ a.element-header:hover, button{
 	vertical-align: top;
 	display: inline-block;
 	margin: 0;
+	min-height: 60vh;
 }
 
 .main-right{
