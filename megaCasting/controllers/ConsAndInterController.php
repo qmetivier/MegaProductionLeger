@@ -8,7 +8,7 @@ if (isset($_GET["auth-name"])){
 	$email = htmlentities($_GET["auth-name"]);
 	$password = htmlentities($_GET["auth-pass"]);
 	requeteSql::connexion($email, $password);
-	header("Location: consAndInterController.php");
+	header("Location: ConsAndInterController.php");
 }
 
 $scripts = "";
