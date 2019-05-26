@@ -49,6 +49,7 @@
 	</div>
 	||FOOTER||
 	||SCRIPTS||
+	<script type="text/javascript" src="../scripts/jquery/jquery-2.1.3.min.js"></script>
 	<script type="text/javascript" src="../services/date.format.js"></script>
 	<script type="text/javascript" src="../services/formulaire.js"></script>
 	<script type="text/javascript" src="../scripts/offreCasting.js"></script>
